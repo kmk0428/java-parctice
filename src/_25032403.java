@@ -1,4 +1,4 @@
-public class Main {
+public class _25032403 {
     public static void main(String[] args) {
         // 주어진 값들
         double doubleValue = 2.71828;
@@ -11,8 +11,7 @@ public class Main {
         System.out.println("2. double -> short: " + (short)doubleValue);
         System.out.println("3. double -> int: " + (int)doubleValue);
         System.out.println("4. double -> long: " + (long)doubleValue);
-        //float는 double 같은 실수형으로 double보다 적은 소수점 뒤의 자리값을 받을 수 있다.
-        //float < double
+        //float는 doulbe 같은 실수형으로 float는 doulbe보다 적은 소수점 뒤의 자리값을 받을 수 있다.
         System.out.println("5. double -> float: " + (float)doubleValue);
     }
 }
