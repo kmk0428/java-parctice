@@ -14,11 +14,11 @@ public class project_7_1 {
         System.out.print("사이즈를 선택해 주세요 \n 1. 작게(무료) \n 2. 중간(500원) \n 3. 크게(1000원) \n");
         size = sc.nextInt();
         //옵션 선택
-        System.out.print("옵션을 선택해 주세요 \n 1. 샷 추가(무료) \n 2. 시럽추가(500원) \n 3. 샷과 시럽 추가(1000원) \n");
+        System.out.print("옵션을 선택해 주세요 \n 1. 기본(무료) \n 2. 샷 추가(300원) \n 3. 시럽추가(500원) \n 4. 샷과 시럽 추가(800원) \n");
         option = sc.nextInt();
 
         //예외처리
-        if ((menu != 1 && menu != 2 && menu != 3) || (size != 1 && size != 2 && size != 3) || (option != 1 && option != 2 && option != 3)) {
+        if ((menu != 1 && menu != 2 && menu != 3) || (size != 1 && size != 2 && size != 3) || (option != 1 && option != 2 && option != 3 && option != 4)) {
             System.out.println("잘못 입력 하였습니다.");
                 return;
         }
@@ -37,18 +37,21 @@ public class project_7_1 {
 
         //사이즈 가격
         if (size == 2) {
-            price = price + 500;
+            price += 500;
         }
         else if (size == 3) {
-            price = price + 1000;
+            price += 1000;
         }
 
         //옵션 가격
         if (option == 2) {
-            price = price + 500;
+            price += 300;
         }
         else if (option == 3) {
-            price = price + 1000;
+            price += 500;
+        }
+        else if (option == 4) {
+            price += 800;
         }
 
         //결과 출력
