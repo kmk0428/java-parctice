@@ -1,11 +1,11 @@
 package Final_project;
-import java.util.Scenner;
+import java.util.Scanner;
 
-public class main {
-    static Scenner sc = new Scenner(System.in);
+public class Main {
+    static Scanner sc = new Scanner(System.in);
     
     public static void todayTime() {
-        // 요일, 시간 정보
+        // 요일, 시간 정보 가져오기
         
     }
 
@@ -15,12 +15,17 @@ public class main {
     }
 
     public static void busStop() {
-        // 정거장 정보
+        // 정거장 위치 정보
         
     }
 
     public static void closer() {
-        // 가까운 정보 확인
+        // 가까운 정보 지정
+        
+    }
+
+    public static void busStopTimeList() {
+        // 버스 정거장 요일별 시간표
         
     }
     
