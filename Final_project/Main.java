@@ -3,14 +3,18 @@ import java.util.Scanner;
 
 public class Main {
     static Scanner sc = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        
+    }
     
     public static void todayTime() {
-        // 요일, 시간 정보 가져오기
+        // 현재 요일, 시간 정보 가져오기
         
     }
 
     public static void currentLocation() {
-        // 구역 분리 및 현재위치
+        // 현재 위치
         
     }
 
@@ -25,11 +29,13 @@ public class Main {
     }
 
     public static void busStopTimeList() {
-        // 버스 정거장 요일별 시간표
+        // 버스 정거장 시간표
+        
+    }
+
+    public static void busSpeed() {
+        // 버스 정거장간 이동 시간
         
     }
     
-    public static void main(String[] args) {
-        
-    }
 }
