@@ -7,7 +7,20 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        main.nextTime();
+        BusStop bus = new BusStop();
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("버스 시간표(1) 현재 정거장(2)\n원하시는 메뉴를 선택해 주세요: ");
+
+        int manual = sc.nextInt();
+
+        switch (manual) {
+            case 1:
+                bus.currentLocation();
+                break;
+            case 2:
+                bus.busStopTimeList();
+        }
 
     }
     
@@ -31,25 +44,6 @@ public class Main {
         return now.getHour() * 100 + now.getMinute();
     }
 
-    public int currentLocation() {
-        // 현재 위치
-        Scanner sc = new Scanner(System.in);
-        String[] busStop = {"정문", "중문", "보건대학", "학생회관", "예술대학", "생활관"};
-
-        while (true) {
-            System.out.println("정문(0) 중문(1) 보건대학(2) 학생회관(3) 예술대학(4) 생활관(5)");
-            System.out.print("현재 장소를 입력하세요: ");
-            int location = sc.nextInt();
-
-            if (location >= 0 && location <= 5) {
-                System.out.println("현재 정거장은 " + busStop[location] + "입니다.\n");
-                return location;
-            }
-            else {
-                System.out.println("잘못된 입력 입니다.");
-            }
-        }
-    }
 
     public void busStop() {
         // 정거장 위치 정보
