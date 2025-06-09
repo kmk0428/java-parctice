@@ -2,8 +2,7 @@ package Final_project;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-
-public class currentTime {
+public class CurrentTime {
 //    현재 시간
     public int localTime(){
         LocalTime now = LocalTime.now();
