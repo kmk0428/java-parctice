@@ -9,7 +9,7 @@ public class Main {
         BusStop bus = new BusStop();
         CurrentBus now = new CurrentBus();
 
-        System.out.print("현재 정거장(1) 오늘 시간표(2) 버스 시간표(3)\n원하시는 메뉴를 선택해 주세요: ");
+        System.out.print("현재 정거장 출발 예상시간(1) 오늘 출발 시간표(2)\n원하시는 메뉴를 선택해 주세요: ");
 
         int manual = sc.nextInt();
 //        int manual = 2;
@@ -27,11 +27,4 @@ public class Main {
                 break;
         }
     }
-
-
-
-//    public void busStop() {
-//        // 정거장 위치 정보
-//
-//    }
 }

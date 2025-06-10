@@ -18,10 +18,10 @@ public class CurrentBus {
                 System.out.println("오늘은 운행이 없습니다.");
                 break;
             } else if ((week == 2 || week == 3 || week == 4) && (i == 8 || i == 11 || i == 13 || i == 15 || i == 17)) {
-                System.out.println(i + ") null");
+                System.out.printf("%02d) null\n", i);
                 continue;
             }
-            System.out.println(i + ") " + todayList()[i] / 100 + ":" + todayList()[i] % 100);
+            System.out.printf("%02d) %02d:%02d\n", i, todayList()[i] / 100, todayList()[i] % 100);
         }
     }
 
