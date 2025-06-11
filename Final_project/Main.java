@@ -6,24 +6,29 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BusStop bus = new BusStop();
         CurrentBus now = new CurrentBus();
 
-        System.out.print("현재 정거장 출발 예상시간(1) 오늘 출발 시간표(2)\n원하시는 메뉴를 선택해 주세요: ");
+        int manual;
 
-        int manual = sc.nextInt();
+        while (true) {
+            System.out.print("(1)오늘 버스 시간표 (2)버스 도착 예상시간\n원하시는 메뉴를 선택해 주세요: ");
+            manual = sc.nextInt();
+            System.out.println();
+            if (manual <= 2 && manual >= 1) {
+                break;
+            }
+            else {
+                System.out.println("잘못된 입력입니다.\n");
+            }
+        }
 //        int manual = 2;
 
         switch (manual) {
             case 1:
-                bus.currentLocation();
-                now.currentBus();
-                break;
-            case 2:
                 now.todayListPrint();
                 break;
-            case 3:
-                bus.busStopTimeListPrint();
+            case 2:
+                now.currentBus();
                 break;
         }
     }
