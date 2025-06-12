@@ -88,6 +88,8 @@ public class BusStop {
 //        정문(0) → 중문(1) → 보건대학(2) → 학생회관(3) → 예술대학(4) → 생활관(5) → 예술대학(9) → 학생회관(8) → 보건대학(7) → 중문(6) → 정문(0)
         int[] busSpeedList = {0, 3, 6, 9, 12, 15, 27, 24, 21, 18};
 
+        direction = 0;
+
         return busSpeedList[location];
     }
 }
