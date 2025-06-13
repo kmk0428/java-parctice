@@ -44,6 +44,7 @@ public class BusStop {
 
 //  정거장 위치
     public void currentLocation() {
+        location = 0;
         String[] busStop = {"정문", "중문", "보건대학", "학생회관", "예술대학", "생활관"};
 
         while (true) {
